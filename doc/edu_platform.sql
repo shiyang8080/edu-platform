@@ -122,22 +122,22 @@ CREATE TABLE `sys_notice_read` (
 -- 初始化数据
 -- ===================================================
 
--- 默认管理员（密码: admin123）
+-- 默认管理员（密码: 123456）
 INSERT INTO `sys_user` (`username`, `password`, `real_name`, `role`, `gender`, `phone`, `email`, `status`)
-VALUES ('admin', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5Eh', '系统管理员', 'ADMIN', 1, '13800000000', 'admin@edu.com', 1);
+VALUES ('admin', '$2b$10$lKX6NAGigO8Im85i/SxXJecjf6y3hRBMK.KqRjnTtXbsGv5h5lr7G', '系统管理员', 'ADMIN', 1, '13800000000', 'admin@edu.com', 1);
 
 -- 示例教师
 INSERT INTO `sys_user` (`username`, `password`, `real_name`, `role`, `gender`, `phone`, `email`, `status`) VALUES
-('teacher1', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5Eh', '张教授', 'TEACHER', 1, '13800000001', 'zhang@edu.com', 1),
-('teacher2', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5Eh', '李教授', 'TEACHER', 2, '13800000002', 'li@edu.com', 1),
-('teacher3', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5Eh', '王讲师', 'TEACHER', 1, '13800000003', 'wang@edu.com', 1);
+('teacher1', '$2b$10$lKX6NAGigO8Im85i/SxXJecjf6y3hRBMK.KqRjnTtXbsGv5h5lr7G', '张教授', 'TEACHER', 1, '13800000001', 'zhang@edu.com', 1),
+('teacher2', '$2b$10$lKX6NAGigO8Im85i/SxXJecjf6y3hRBMK.KqRjnTtXbsGv5h5lr7G', '李教授', 'TEACHER', 2, '13800000002', 'li@edu.com', 1),
+('teacher3', '$2b$10$lKX6NAGigO8Im85i/SxXJecjf6y3hRBMK.KqRjnTtXbsGv5h5lr7G', '王讲师', 'TEACHER', 1, '13800000003', 'wang@edu.com', 1);
 
 -- 示例学生
 INSERT INTO `sys_user` (`username`, `password`, `real_name`, `role`, `gender`, `phone`, `email`, `status`) VALUES
-('student1', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5Eh', '赵同学', 'STUDENT', 1, '13900000001', 'zhao@edu.com', 1),
-('student2', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5Eh', '钱同学', 'STUDENT', 2, '13900000002', 'qian@edu.com', 1),
-('student3', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5Eh', '孙同学', 'STUDENT', 1, '13900000003', 'sun@edu.com', 1),
-('student4', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5Eh', '周同学', 'STUDENT', 2, '13900000004', 'zhou@edu.com', 1);
+('student1', '$2b$10$lKX6NAGigO8Im85i/SxXJecjf6y3hRBMK.KqRjnTtXbsGv5h5lr7G', '赵同学', 'STUDENT', 1, '13900000001', 'zhao@edu.com', 1),
+('student2', '$2b$10$lKX6NAGigO8Im85i/SxXJecjf6y3hRBMK.KqRjnTtXbsGv5h5lr7G', '钱同学', 'STUDENT', 2, '13900000002', 'qian@edu.com', 1),
+('student3', '$2b$10$lKX6NAGigO8Im85i/SxXJecjf6y3hRBMK.KqRjnTtXbsGv5h5lr7G', '孙同学', 'STUDENT', 1, '13900000003', 'sun@edu.com', 1),
+('student4', '$2b$10$lKX6NAGigO8Im85i/SxXJecjf6y3hRBMK.KqRjnTtXbsGv5h5lr7G', '周同学', 'STUDENT', 2, '13900000004', 'zhou@edu.com', 1);
 
 -- 示例院系
 INSERT INTO `sys_department` (`name`, `description`) VALUES
