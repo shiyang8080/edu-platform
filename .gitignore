@@ -1,0 +1,22 @@
+# Maven
+edu-server/target/
+
+# Node
+edu-client/node_modules/
+edu-client/dist/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+
+# Env
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
